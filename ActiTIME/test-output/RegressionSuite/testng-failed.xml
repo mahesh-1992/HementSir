@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [RegressionSuite]">
+  <parameter name="appUrl" value="https://demo.actitime.com/reports/reports.do"/>
+  <test thread-count="5" verbose="5" name="FirefoxTest(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.skillrary.actitime.testscripts.TC001">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="deleteCustomerAfter"/>
+          <include name="deleteCustomerBefore"/>
+          <include name="openApp"/>
+          <include name="testTaskCreation"/>
+          <include name="loginoutFromApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- com.skillrary.actitime.testscripts.TC001 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->
